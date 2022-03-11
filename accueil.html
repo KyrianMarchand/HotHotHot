@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="page.css" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Projet JS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>HotHotHot</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+      <div class="sidebar-container">
+        <ul class="sidebar-navigation">
+          <li role ="tab">
+            <a href="#courant">
+              Température courante
+            </a>
+          </li>
+          <li role="tab">
+            <a href="#historique">
+              Historique
+            </a>
+          </li>
+    </header>
+    </br>
+    <section role="tabpanel" class='active' id="courant">
+			<p id="p_temperature">Affichage de la température ext: <span aria-live="assertive" id="span_temperature"></span></p>
+		</section>
+    </br>
+
+
+		<table role="tabpanel" id="historique">
+			<tr><th colspan="2">Historique</th></tr>
+			<tr>
+				<th>Date</th>
+				<th>Température</th>
+			</tr>
+			<tr id="ligne_modele">
+				<td class="td_date"></td>
+				<td class="td_temperature"></td>
+			</tr>
+		</table>
+		
+        <script type="text/javascript" src="Donnees_capteurs.js"></script>	
+    </body>
+</html>
+  </ul>
+</div>
+</body>
+</html>
