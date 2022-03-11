@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.webmanifest"/>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="styles/page.css" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Projet JS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>HotHotHot</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+  <button class="add-button"> Add to home screen </button>
+    <header>
+      <div class="sidebar-container">
+        <ul class="sidebar-navigation">
+          <li role ="tab">
+            <a href="#courant">
+              Température courante
+            </a>
+          </li>
+          <li role="tab">
+            <a href="#historique">
+              Historique
+            </a>
+          </li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img class="dropbtn" src="img/user.png"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+    </header>
+    <section role="tabpanel" class='active' id="courant">
+
+			<p id="p_temperature">Affichage de la température : <span aria-live="assertive" id="span_temperature"></span></p>
+		</section>
+
+		<table role="tabpanel" id="historique">
+			<tr><th colspan="2">Historique</th></tr>
+			<tr>
+				<th>Date</th>
+				<th>Température</th>
+			</tr>
+			<tr id="ligne_modele">
+				<td class="td_date"></td>
+				<td class="td_temperature"></td>
+			</tr>
+		</table>
+        <script defer src="main.js"></script>
+        <script type="text/javascript" src="Donnees_capteurs.js"></script>	
+    </body>
+</html>
+  </ul>
+</div>
+</body>
+</html>
