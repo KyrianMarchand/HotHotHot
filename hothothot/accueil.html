@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.webmanifest"/>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="styles/page.css" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Projet JS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>HotHotHot</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+      <div class="sidebar-container">
+        <ul class="sidebar-navigation">
+          <div></div>
+          <div>
+            <li role ="tab">
+              <a href="#courant">
+                Température courante
+              </a>
+            </li>
+            <li role="tab">
+              <a href="#historique">
+                Historique
+              </a>
+            </li>
+        </div>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img class="dropbtn" src="img/user.png"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="documentation.html">Documentation</a>
+              <a href="#">Profil</a>
+              <a href="#">Login/Logout</a>
+            </div>
+          </div>
+    </header>
+    <section role="tabpanel" class='active' id="courant">
+    <div class="temp">
+      <div class="tempExt">
+        <p id="p_temperature">Affichage de la température Extérieure : </span><span aria-live="assertive" id="span_temperatureext"></span>
+        </p>
+        <p>Température min en Extérieur : <span aria-live="assertive" id="span_minext"></span></p>
+        <p>Température max en Extérieur : <span aria-live="assertive" id="span_maxext"></span></p>
+      </div>
+      <div class="tempInt">
+        <p id="p_temperature">Affichage de la température Intérieure : <span aria-live="assertive"
+            id="span_temperature"></span></p>
+        <p>Température max en Intérieur : <span aria-live="assertive" id="span_minint"></span></p>
+        <p>Température min en Intérieur : <span aria-live="assertive" id="span_maxint"></span></p>
+      </div>
+    </div>
+    </section>
+
+    <canvas id="line-chart" width="800" height="270"></canvas>
+        <script defer src="main.js"></script>
+        <script type="text/javascript" src="Donnees_capteurs.js"></script>	
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <footer>
+      <p class="copyright">
+          © Killian Jubert, Kyrian Marchand, Thibault Melano, Cyril Parnet, Lise Pilato </br>
+          Projet HotHotHot, Année 2021-2022
+      </p>
+    </footer>
+    </html>

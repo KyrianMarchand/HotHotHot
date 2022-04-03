@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="styles/page.css" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Projet JS">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>HotHotHot</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <div class="sidebar-container">
+          <ul class="sidebar-navigation">
+            <div></div>
+            <div>
+              <li role ="tab">
+                <a href="accueil.html#courant">
+                  Accueil
+                </a>
+              </li>
+
+          </div>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn"><img class="dropbtn" src="img/user.png"></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="documentation.html">Documentation</a>
+                <a href="#">Profil</a>
+                <a href="#">Login/Logout</a>
+              </div>
+            </div>
+      </header>
+
+    <h1>Présentation de l'équipe</h1>
+    <p>
+        L'équipe est composée de 5 membres : Killian Jubert, Kyrian Marchand, Thibault Melano, Cyril Parnet et Lise Pilato. </br> </br>
+        Pour plus d'efficacité, nous nous sommes répartis les tâches comme suit : </br>
+          Thibaud : Mise en place du serveur, du service-worker/PWA, graphe : HTML / CSS / Javascript </br>
+          Kyrian : Mise en place du Github : HTML / CSS / Javascript </br>
+          Cyril : Utilisation du capteur : HTML / CSS / Javascript </br>
+          Killian : Rédaction de la documentation, réalisation des notifications : HTML / CSS / Javascript </br>
+          Lise : Rédaction de la documentation, réalisation des notifications : HTML / CSS / Javascript
+    </p> </br> </br>
+
+    <h1>Les différents outils utilisés</h1>
+    <p>
+        Pour la programmation, nous avons utilisé le logiciel <a class="liens" href="https://code.visualstudio.com/"> Visual Studio Code</a>. </br>
+        Pour le partage des fichiers, nous avons utilisé <a class="liens" href="https://github.com"> GitHub</a> ainsi que <a href="https://drive.google.com/"> Google Drive</a>. </br>
+        Pour l'hébergement du site, nous avons utilisé un hébergeur gratuit, <a class="liens" href="https://www.alwaysdata.com/en/"> Alwaysdata</a>. </br>
+        Pour la réalisation du diagramme de Gantt, nous avons utilisé le site web <a class="liens" href="https://www.lucidchart.com/pages/fr"> Lucidchart</a>.
+    </p> </br> </br>
+
+    <h1>L'organisation</h1>
+    <h3>Gestion du projet</h3>
+    <p>
+        Pour commencer, nous avons mis en place un <a class="liens" href="https://github.com/KyrianMarchand/HotHotHot"> Repository Github</a> pour se
+            partager le code plus facilement entre nous. Nous avons également mis en place un Google Document pour pouvoir rédiger à plusieurs
+            la documentation au brouillon avant de la mettre en place sur le site. </br>
+
+    </p> </br> </br>    
+    
+    <h3>Organisation dans le temps</h3>
+    <p>
+        Nous avons d'abord appris a utiliser les capteurs a partir du websocket et a les afficher. Nous avon ensuite créer 
+        un tableau d'historique que nous avons transformer en graphique avec l'aide de chartjs dans lequel nous affichons 
+        la valeur des capteurs qui avance avec le temps. En paralèlle nous avons mis en place le certificat SSL ainsi que 
+        le service worker et la PWA. Après cela nous avons mis en place les alerte et notifications.
+    </p> </br> </br>
+
+    <h3>Principales Difficultés, Solutions apportées</h3>
+    <p>
+        La difficulté la plus importante a été de mettre le graphe sur une page différente de celle des capteurs. Cependant, mais si nous avions fait cela les données ce serait réinitialisées à 
+        chaque changement de page.</br>
+        Pour résoudre ce problème, nous avons donc choisi de pouvoir faire "disparaître" et "réapparaître" les données.</br></br>
+
+        La deuxième difficulté a été le Web Socket qui marchait une fois sur trois, ce qui nous oblige à actualiser plusieurs fois la page avant qu'elle ne marche.</br>
+        Nous n'avons malheureusement pas pu résoudre ce problème qui ne dépend pas de nous. </br></br>
+    </p> </br> </br>
+
+    <h3>Si vous deviez recommencer ce projet, que changeriez vous à vos pratiques ?</h3>
+    <p>
+        Si nous devions recommencer le projet, nous pensons que l'on devrait plus s'appuyer sur les outils dont on dispose, comme par exemple GitHub que nous n'avons pas assez utilisé. Il faudrait également
+        travailler de façon plus régulière afin de ne pas faire beaucoup de code d'un coup, et plus rien du tout pendant certaines périodes.
+    </p>
+
+    <footer>
+        <p class="copyright">
+            © Killian Jubert, Kyrian Marchand, Thibaud Melano, Cyril Parnet, Lise Pilato </br>
+            Projet HotHotHot, Année 2021-2022
+        </p>
+    </footer>
+</body>
+</html>
